@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+.form-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(96, 96, 96, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding-bottom: 30px;
+}
+
+.new-data {
+  position: fixed; 
+  top: 50%; 
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); 
+  width: 550px; 
+  height: 300px; 
+  max-width: 1200px;
+  background: #e6ebef;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  background-color: #2e266d;
+  color: #fff;
+  padding: 5px;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+.close-btn {
+  padding-right: 10px;
+  font-size: 24px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+
+}
+
+
+.close-btn:hover {
+    padding-right: 10px;
+  font-size: 24px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transform: scale(1.15);
+
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.items button {
+    width: 400px; 
+    padding: 7px 20px;
+    background: #c8d9e6;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 8px;
+    color: #010440;
+}
+
+.items button:hover {
+    background: #abc1ff;
+    transform: scale(1.05);
+}
